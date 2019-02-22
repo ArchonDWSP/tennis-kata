@@ -23,4 +23,20 @@ public class Discount {
         return product;
     }
 
+    RE TEST BORDEL DE MERDE
+    
+    sddsgerbrehrebr
+    bf
+    sdfb
+    dqbdfbrbrb
+    rb
+    rv
+    bbberberqfbtgrbrsd
+    vqbb
+    BRRBRFVD
+    FBBREFG
+    ERG
+    FBFD
+    BFB
+    BTBT
 }

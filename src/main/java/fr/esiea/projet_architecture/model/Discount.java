@@ -25,18 +25,6 @@ public class Discount {
 
     RE TEST BORDEL DE MERDE
     C3PO MAGGLE
-    sddsgerbrehrebr
-    bf
-    sdfb
-    dqbdfbrbrb
-    rb
-    rv
-    bbberberqfbtgrbrsd
-    vqbb
-    BRRBRFVD
-    FBBREFG
-    ERG
-    FBFD
-    BFB
+    sdds
     BTBT
 }

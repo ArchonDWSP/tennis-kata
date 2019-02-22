@@ -22,9 +22,5 @@ public class Discount {
     public Product getProduct() {
         return product;
     }
-
-    RE TEST BORDEL DE MERDE
-    C3PO MAGGLE
-    sdds
-    BTBT
+test
 }

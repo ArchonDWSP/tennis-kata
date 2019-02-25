@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # .editorconfig supermarketreceipt
 
 [*]
@@ -6,3 +7,15 @@ charset = utf-8
 indent_style = space
 indent_size = 4
 insert_final_newline = true
+=======
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+indent_style = space
+indent_size = 4
+>>>>>>> cc23029f40e2faf2591b99a2c5177032844b147d

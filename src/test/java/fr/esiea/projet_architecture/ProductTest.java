@@ -1,4 +1,4 @@
-package esiea.model;
+package fr.esiea.projet_architecture;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;

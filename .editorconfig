@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# .editorconfig supermarketreceipt
-
-[*]
-end_of_line = lf
-charset = utf-8
-indent_style = space
-indent_size = 4
-insert_final_newline = true
-=======
-=======
->>>>>>> dc53ff5d840dbec2ceeed5b98cbb661f0cd9ad34
 # top-most EditorConfig file
 root = true
 
@@ -21,7 +8,3 @@ insert_final_newline = true
 charset = utf-8
 indent_style = space
 indent_size = 4
-<<<<<<< HEAD
->>>>>>> cc23029f40e2faf2591b99a2c5177032844b147d
-=======
->>>>>>> dc53ff5d840dbec2ceeed5b98cbb661f0cd9ad34

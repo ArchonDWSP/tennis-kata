@@ -19,8 +19,8 @@ public class ReceiptPrinterTest {
         SupermarketCatalog catalog = new FakeCatalog();
         ShoppingCart cart = new ShoppingCart();
 
-        Product banane = new Product("wine", ProductUnit.Kilo);
-        Product gateau = new Product("beer",ProductUnit.Each);
+        Product banane = new Product("banane", ProductUnit.Kilo);
+        Product gateau = new Product("gateau",ProductUnit.Each);
         Product apple = new Product("Apple",ProductUnit.Kilo);
 
         catalog.addProduct(banane, 2.00);

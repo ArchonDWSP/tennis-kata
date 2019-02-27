@@ -15,7 +15,7 @@ public class ShoppingCart {
         return new ArrayList<ProductQuantity>(items);
     }
 
-    void addItem(Product product) {
+    public void addItem(Product product) {
         this.addItemQuantity(product, 1.0);
     }
 

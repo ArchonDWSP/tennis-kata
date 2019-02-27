@@ -1,5 +1,7 @@
 package fr.esiea.projet_architecture;
 
+import fr.esiea.projet_architecture.model.*;
+
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

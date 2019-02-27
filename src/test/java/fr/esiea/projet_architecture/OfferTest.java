@@ -1,6 +1,6 @@
 package fr.esiea.projet_architecture;
 
-import fr.esiea.projet_architecture.model.*;
+import fr.esiea.projet_architecture.model.Offer;
 
 import org.junit.jupiter.api.Test;
 

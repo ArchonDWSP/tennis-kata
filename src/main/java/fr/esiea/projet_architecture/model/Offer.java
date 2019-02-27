@@ -12,7 +12,7 @@ public class Offer {
     }
 
     Product getProduct() {
-        return product;
+        return this.product;
     }
 
 }

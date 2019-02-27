@@ -1,15 +1,17 @@
-<<<<<<< HEAD
 package fr.esiea.projet_architecture;
 
-import org.junit.jupiter.api.Test;
+import fr.esiea.projet_architecture.ReceiptPrinter;
 
+import fr.esiea.projet_architecture.model.Discount;
+import fr.esiea.projet_architecture.model.SupermarketCatalog;
+import fr.esiea.projet_architecture.model.Teller;
 import fr.esiea.projet_architecture.model.Product;
 import fr.esiea.projet_architecture.model.ProductUnit;
 import fr.esiea.projet_architecture.model.Receipt;
 import fr.esiea.projet_architecture.model.ShoppingCart;
-import fr.esiea.projet_architecture.model.SpecialOfferType;
-import fr.esiea.projet_architecture.model.SupermarketCatalog;
-import fr.esiea.projet_architecture.model.Teller;
+
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class SupermarketTest {
 
@@ -25,30 +27,15 @@ public class SupermarketTest {
         cart.addItemQuantity(apples, 2.5);
 
         Teller teller = new Teller(catalog);
-        teller.addSpecialOffer(SpecialOfferType.TenPercentDiscount, toothbrush, 10.0);
+        //teller.addSpecialOffer(SpecialOfferType.TenPercentDiscount, toothbrush, 10.0);
 
         Receipt receipt = teller.checksOutArticlesFrom(cart);
 
-        // Todo: complete this test
+        Assertions.assertThat(receipt.getTotalPrice()).isEqualTo(4.975);
     }
-}
-=======
-package fr.esiea.projet_architecture;
-
-import org.junit.jupiter.api.Test;
-
-import fr.esiea.projet_architecture.model.Product;
-import fr.esiea.projet_architecture.model.ProductUnit;
-import fr.esiea.projet_architecture.model.Receipt;
-import fr.esiea.projet_architecture.model.ShoppingCart;
-import fr.esiea.projet_architecture.model.SpecialOfferType;
-import fr.esiea.projet_architecture.model.SupermarketCatalog;
-import fr.esiea.projet_architecture.model.Teller;
-
-public class SupermarketTest {
 
     @Test
-    public void testSomething() {
+    public void testReceiptPrinter() {
         SupermarketCatalog catalog = new FakeCatalog();
         Product toothbrush = new Product("toothbrush", ProductUnit.Each);
         catalog.addProduct(toothbrush, 0.99);
@@ -59,11 +46,12 @@ public class SupermarketTest {
         cart.addItemQuantity(apples, 2.5);
 
         Teller teller = new Teller(catalog);
-        teller.addSpecialOffer(SpecialOfferType.TenPercentDiscount, toothbrush, 10.0);
 
         Receipt receipt = teller.checksOutArticlesFrom(cart);
+        receipt.addDiscount(new Discount(apples, "Reduction pomme", 0.3));
 
-        // Todo: complete this test
+        Assertions.assertThat(new ReceiptPrinter().printReceipt(receipt)).isNotBlank();
     }
+
+
 }
->>>>>>> f83d48ab1440c1fa4dc57b180503d2c37cf4e87e

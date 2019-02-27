@@ -1,4 +1,4 @@
-package fr.esiea.projet_architecture.model;
+package fr.esiea.projet_architecture;
 
 import org.junit.jupiter.api.Test;
 
